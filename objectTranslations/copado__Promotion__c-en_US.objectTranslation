@@ -17,6 +17,10 @@
         <name>copado__Pipeline_Manager</name>
     </fieldSets>
     <fields>
+        <label><!-- Merge Conflict --></label>
+        <name>Conflict__c</name>
+    </fields>
+    <fields>
         <help><!-- Select this checkbox if you are promoting from a higher to a lower environment in the pipeline. --></help>
         <label><!-- Is Back-Promotion --></label>
         <name>copado__Back_Promotion__c</name>

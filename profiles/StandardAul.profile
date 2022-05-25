@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
+        <application>Copado_Trial</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>copado__Copado</application>
         <default>false</default>
         <visible>false</visible>
@@ -10092,6 +10097,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>copado__Deployment__c.Completed_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Deployment__c.Deployment_Time_Minutes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Deployment__c.Start_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>copado__Deployment__c.copado__Active__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -11468,6 +11488,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>copado__Promoted_User_Story__c.copado__Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Promotion__c.Conflict__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13493,6 +13518,41 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>copado__User_Story_Task__c.copado__Subject__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.Datetime_Completed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.Datetime_Deployed_To_Production__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.Lead_Time_Hours__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.Lead_Time_Minutes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.Number_Of_Components__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.SCA_Score__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.SCA_Violations__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
