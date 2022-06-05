@@ -15,6 +15,20 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -114,116 +128,85 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>AccountId</fullName>
+        <fullName>AdjustedForecastedQuantity</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AdvAcctForecastSetUseId</fullName>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>AuditEmail</fullName>
+        <fullName>ExternalReferenceNumber</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>AutoCardType</fullName>
+        <fullName>ForecastedQuantity</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>CardBin</fullName>
-    </fields>
-    <fields>
-        <fullName>CardCategory</fullName>
-    </fields>
-    <fields>
-        <fullName>CardHolderFirstName</fullName>
-    </fields>
-    <fields>
-        <fullName>CardHolderLastName</fullName>
-    </fields>
-    <fields>
-        <fullName>CardHolderName</fullName>
-    </fields>
-    <fields>
-        <fullName>CardLastFour</fullName>
-    </fields>
-    <fields>
-        <fullName>CardType</fullName>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Comments</fullName>
-    </fields>
-    <fields>
-        <fullName>CompanyName</fullName>
-    </fields>
-    <fields>
-        <fullName>DisplayCardNumber</fullName>
-    </fields>
-    <fields>
-        <fullName>Email</fullName>
-    </fields>
-    <fields>
-        <fullName>ExpiryMonth</fullName>
-    </fields>
-    <fields>
-        <fullName>ExpiryYear</fullName>
-    </fields>
-    <fields>
-        <fullName>GatewayDate</fullName>
-    </fields>
-    <fields>
-        <fullName>GatewayResultCode</fullName>
-    </fields>
-    <fields>
-        <fullName>GatewayResultCodeDescription</fullName>
-    </fields>
-    <fields>
-        <fullName>GatewayToken</fullName>
-    </fields>
-    <fields>
-        <fullName>GatewayTokenDetails</fullName>
-    </fields>
-    <fields>
-        <fullName>GatewayTokenEncrypted</fullName>
-    </fields>
-    <fields>
-        <fullName>InputCardNumber</fullName>
-    </fields>
-    <fields>
-        <fullName>IpAddress</fullName>
-    </fields>
-    <fields>
-        <fullName>IsAutoPayEnabled</fullName>
-    </fields>
-    <fields>
-        <fullName>MacAddress</fullName>
-    </fields>
-    <fields>
-        <fullName>NickName</fullName>
-    </fields>
-    <fields>
-        <fullName>PaymentGatewayId</fullName>
+        <fullName>ManufacturingProgramId</fullName>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Phone</fullName>
+        <fullName>MarketSharePercent</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>ProcessingMode</fullName>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>SfResultCode</fullName>
+        <fullName>PeriodId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>StartMonth</fullName>
+        <fullName>PeriodStartDate</fullName>
     </fields>
     <fields>
-        <fullName>StartYear</fullName>
+        <fullName>ProductId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductionLocationId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductionModelId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Status</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <listViews>
-        <fullName>CardPaymentMethod</fullName>
+        <fullName>All_MfgProgramVariantFrcstFacts</fullName>
         <filterScope>Everything</filterScope>
-        <label>All</label>
+        <label>AllMfgProgramVariantFrcstFacts</label>
     </listViews>
-    <sharingModel>ReadWrite</sharingModel>
+    <listViews>
+        <fullName>My_MfgProgramVariantFrcstFacts</fullName>
+        <filterScope>Mine</filterScope>
+        <label>MyMfgProgramVariantFrcstFacts</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>AdvAcctForecastSetUse</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ManufacturingProgram</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ProductionLocation</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>AdvAcctForecastSetUse</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ManufacturingProgram</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ProductionLocation</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
 </CustomObject>
