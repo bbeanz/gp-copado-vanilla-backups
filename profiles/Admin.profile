@@ -14328,6 +14328,9 @@
         <layout>Seller-Seller Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ServiceAppointmentGroup-Service Appointment Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ServiceContract-Service Contract Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -14392,6 +14395,12 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkOrderLineItem-Work Order Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkProcedure-Work Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkProcedureStep-Work Procedure Step Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkThanks-Thanks Layout</layout>
@@ -16997,7 +17006,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>copado__Static_Code_Analysis_Result__c.copado__PMD</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -17008,7 +17016,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>copado__Static_Code_Analysis_Settings__c.copado__PMD</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -17019,7 +17026,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>copado__Static_Code_Analysis_Violation__c.copado__PMD</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -17688,8 +17694,16 @@
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-RescheduleAppointments</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-SOSSession</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ScheduleAppointments</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Scorecard</tab>
@@ -18227,6 +18241,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageNetworks</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageOrchInstsAndWorkItems</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
